@@ -8,29 +8,23 @@
 git clone https://github.com/abishekbhandari54321/Git-GitHub-Learning.git
 ```
 
-### What Happened?
+### Output
 
 A new folder named `Git-GitHub-Learning` was created in my D drive.
 
+### What Happened?
+
+The complete repository was downloaded from GitHub to my computer.
+
 ### What I Learned
 
-- git clone downloads the complete repository.
+- `git clone` downloads the entire repository.
 - It also downloads the commit history.
-- It creates a working Git repository on my computer.
+- The downloaded folder is also a Git repository.
 
 ---
 
-## Practical 2 - git fetch:
-
-"Create:
-
-github-test.txt - on the GitHub
-
-Write:
-
-This file was created directly on GitHub.
-
-Commit it directly on GitHub."
+## Practical 2 - git fetch
 
 ### Command Used
 
@@ -38,19 +32,52 @@ Commit it directly on GitHub."
 git fetch
 ```
 
-### Result
+### Output
 
-Git found that GitHub had one new commit.
+```text
+From https://github.com/abishekbhandari54321/Git-GitHub-Learning
+f2658a7..390a4da main -> origin/main
+```
 
-My local files were NOT updated.
+### What Happened?
 
-### Learning
+Git found that there was one new commit on GitHub.
 
-git fetch downloads information about new commits but does not update local files.
+### What I Learned
+
+- `git fetch` checks for updates from GitHub.
+- It downloads information about new commits.
+- It does NOT update my local files.
 
 ---
 
-## Practical 3 - git pull
+## Practical 3 - git status after git fetch
+
+### Command Used
+
+```bash
+git status
+```
+
+### Output
+
+```text
+Your branch is behind 'origin/main' by 1 commit, and can be fast-forwarded.
+(use "git pull" to update your local branch)
+```
+
+### What Happened?
+
+Git informed me that my local repository is one commit behind GitHub.
+
+### What I Learned
+
+- My local repository knew about the new commit.
+- The files were still not downloaded.
+
+---
+
+## Practical 4 - git pull
 
 ### Command Used
 
@@ -58,10 +85,59 @@ git fetch downloads information about new commits but does not update local file
 git pull
 ```
 
-### Result
+### Output
 
-The file `github-test.txt` was downloaded to my computer.
+(Write the output you get after running the command.)
 
-### Learning
+### What Happened?
 
-git pull downloads and applies changes from GitHub to my local repository.
+The latest changes from GitHub were downloaded and applied to my local repository.
+
+### What I Learned
+
+- `git pull` downloads and applies changes.
+- `git pull` is similar to:
+
+```bash
+git fetch
+git merge
+```
+
+---
+
+## Practical 5 - git remote -v
+
+### Command Used
+
+```bash
+git remote -v
+```
+
+### Output
+
+```text
+origin  https://github.com/abishekbhandari54321/Git-GitHub-Learning.git (fetch)
+origin  https://github.com/abishekbhandari54321/Git-GitHub-Learning.git (push)
+```
+
+### What I Learned
+
+- This command shows the remote repository connected to my local repository.
+
+---
+
+## Practical 6 - git log --oneline
+
+### Command Used
+
+```bash
+git log --oneline
+```
+
+### Output
+
+(Write your own commit history here.)
+
+### What I Learned
+
+- This command shows the commit history in a short format.
