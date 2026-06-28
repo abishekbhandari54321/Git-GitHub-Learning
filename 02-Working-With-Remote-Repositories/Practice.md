@@ -126,7 +126,27 @@ origin  https://github.com/abishekbhandari54321/Git-GitHub-Learning.git (push)
 
 ---
 
-## Practical 6 - git log --oneline
+## Practical 6 - git log
+
+### Command Used
+
+```bash
+git log
+```
+
+### What Happened?
+
+Git displayed the complete commit history.
+
+### What I Learned
+
+- Every commit has an ID.
+- Every commit has an author.
+- Every commit has a date and message.
+
+---
+
+## Practical 7 - git log --oneline
 
 ### Command Used
 
