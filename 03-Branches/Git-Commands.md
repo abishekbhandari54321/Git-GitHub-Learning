@@ -101,3 +101,49 @@ Example:
 ```bash
 git push -u origin feature-payment
 ```
+
+---
+
+## Delete a remote branch
+
+```bash
+git push origin --delete <branch-name>
+```
+
+Example:
+
+```bash
+git push origin --delete feature-payment
+```
+
+Deletes a branch from GitHub (remote repository).
+
+---
+
+## Check repository status
+
+```bash
+git status
+```
+
+Shows the current state of the repository.
+
+---
+
+## View commit history
+
+```bash
+git log
+```
+
+Shows the complete commit history.
+
+---
+
+## View short commit history
+
+```bash
+git log --oneline
+```
+
+Shows a short and clean version of the commit history.

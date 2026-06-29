@@ -50,3 +50,45 @@ main
 └── bug-fix-navbar
 
 After completing their work, they merge the branch into `main` and then delete the branch.
+
+---
+
+## 7. What is a Fast-Forward Merge?
+
+A Fast-Forward Merge is a merge in which Git simply moves the branch pointer to the latest commit without creating a new merge commit.
+
+---
+
+## 8. What is the difference between a local branch and a remote branch?
+
+Local Branch:
+Exists on your computer.
+
+Remote Branch:
+Exists on GitHub.
+
+---
+
+## 9. Why should we delete feature branches after merging?
+
+Because they are no longer needed and deleting them keeps the repository clean and organized.
+
+---
+
+## 10. Write the complete feature branch workflow.
+
+main
+↓
+Create feature branch
+↓
+Write code
+↓
+Commit changes
+↓
+Push branch
+↓
+Merge into main
+↓
+Push main
+↓
+Delete branch

@@ -127,6 +127,62 @@ git push -u origin feature-payment
 
 ---
 
+---
+
+## What is a Fast-Forward Merge?
+
+A Fast-Forward Merge happens when Git can simply move the main branch pointer forward to the latest commit without creating an extra merge commit.
+
+Example:
+
+Before Merge:
+
+main
+\
+ feature-payment
+
+After Merge:
+
+main, feature-payment
+|
+Latest Commit
+
+---
+
+## Local Branch vs Remote Branch
+
+Local Branch:
+
+- Exists on your computer.
+- Example: feature-payment
+
+Remote Branch:
+
+- Exists on GitHub.
+- Example: origin/feature-payment
+
+---
+
+## Deleting Branches
+
+After a branch has been merged into main, it is usually deleted because it is no longer needed.
+
+Delete local branch:
+
+```bash
+git branch -d feature-payment
+```
+
+Delete remote branch:
+
+```bash
+git push origin --delete feature-payment
+```
+
+# Summary
+
+Today I learned:
+
 # Summary
 
 Today I learned:
@@ -135,6 +191,11 @@ Today I learned:
 - Why branches are used
 - Creating branches
 - Switching branches
+- Creating and switching branches in one command
+- Working in feature branches
 - Merging branches
-- Deleting branches
+- Fast-Forward Merge
+- Deleting local branches
+- Deleting remote branches
 - Pushing branches to GitHub
+- Difference between local and remote branches

@@ -172,3 +172,83 @@ git push -u origin feature-payment
 ### What I Learned
 
 A new branch can be uploaded to GitHub.
+
+---
+
+## Practical 11 - Merge feature-payment into main
+
+### Commands Used
+
+```bash
+git switch main
+git pull
+git merge feature-payment
+```
+
+### Output
+
+```text
+Fast-forward
+```
+
+### What Happened?
+
+The changes from the feature-payment branch became part of the main branch.
+
+### What I Learned
+
+Git can perform a Fast-Forward Merge when there are no conflicting changes.
+
+---
+
+## Practical 12 - Push Updated Main Branch
+
+### Command Used
+
+```bash
+git push
+```
+
+### What Happened?
+
+The latest commits from the main branch were uploaded to GitHub.
+
+### What I Learned
+
+After merging locally, we need to push the updated main branch to GitHub.
+
+---
+
+## Practical 13 - Delete Local Branch
+
+### Command Used
+
+```bash
+git branch -d feature-payment
+```
+
+### What Happened?
+
+The feature-payment branch was deleted from my computer.
+
+### What I Learned
+
+A merged branch can be safely deleted locally.
+
+---
+
+## Practical 14 - Delete Remote Branch
+
+### Command Used
+
+```bash
+git push origin --delete feature-payment
+```
+
+### What Happened?
+
+The feature-payment branch was deleted from GitHub.
+
+### What I Learned
+
+Remote branches can also be deleted after they are merged.
