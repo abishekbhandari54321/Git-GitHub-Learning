@@ -183,10 +183,6 @@ git push origin --delete feature-payment
 
 Today I learned:
 
-# Summary
-
-Today I learned:
-
 - What is a branch
 - Why branches are used
 - Creating branches
