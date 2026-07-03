@@ -1,0 +1,12 @@
+name: Welcome Workflow
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Welcome
+        run: echo "Welcome at GitHub Actions!"
